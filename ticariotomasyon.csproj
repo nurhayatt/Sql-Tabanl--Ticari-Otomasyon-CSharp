@@ -1,0 +1,337 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B16B349B-4B18-4C8C-A0B6-EDCB4DDDC42E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ticariotomasyon</RootNamespace>
+    <AssemblyName>ticariotomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.VS2010.10.0.40219.1\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmin.Designer.cs">
+      <DependentUpon>frmadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnamodul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnamodul.Designer.cs">
+      <DependentUpon>frmAnamodul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmanasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmanasayfa.Designer.cs">
+      <DependentUpon>frmanasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmayarlar.Designer.cs">
+      <DependentUpon>frmayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbankalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbankalar.Designer.cs">
+      <DependentUpon>frmbankalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfaturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfaturalar.Designer.cs">
+      <DependentUpon>frmfaturalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfaturaurundetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfaturaurundetay.Designer.cs">
+      <DependentUpon>frmfaturaurundetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfaturaurunduzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfaturaurunduzenleme.Designer.cs">
+      <DependentUpon>frmfaturaurunduzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfirmalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfirmalar.Designer.cs">
+      <DependentUpon>frmfirmalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiderler.Designer.cs">
+      <DependentUpon>frmgiderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmhareketler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhareketler.Designer.cs">
+      <DependentUpon>frmhareketler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkasa.Designer.cs">
+      <DependentUpon>frmkasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmail.Designer.cs">
+      <DependentUpon>frmmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriler.Designer.cs">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnotlar.Designer.cs">
+      <DependentUpon>frmnotlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnotlardetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnotlardetay.Designer.cs">
+      <DependentUpon>frmnotlardetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpersoneller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpersoneller.Designer.cs">
+      <DependentUpon>frmpersoneller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrehber.Designer.cs">
+      <DependentUpon>frmrehber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstokdetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstokdetay.Designer.cs">
+      <DependentUpon>frmstokdetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstoklar.Designer.cs">
+      <DependentUpon>frmstoklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmurunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmurunler.Designer.cs">
+      <DependentUpon>frmurunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="frmadmin.resx">
+      <DependentUpon>frmadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnamodul.resx">
+      <DependentUpon>frmAnamodul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmanasayfa.resx">
+      <DependentUpon>frmanasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmayarlar.resx">
+      <DependentUpon>frmayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbankalar.resx">
+      <DependentUpon>frmbankalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfaturalar.resx">
+      <DependentUpon>frmfaturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfaturaurundetay.resx">
+      <DependentUpon>frmfaturaurundetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfaturaurunduzenleme.resx">
+      <DependentUpon>frmfaturaurunduzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfirmalar.resx">
+      <DependentUpon>frmfirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgiderler.resx">
+      <DependentUpon>frmgiderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhareketler.resx">
+      <DependentUpon>frmhareketler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkasa.resx">
+      <DependentUpon>frmkasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmail.resx">
+      <DependentUpon>frmmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriler.resx">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnotlar.resx">
+      <DependentUpon>frmnotlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnotlardetay.resx">
+      <DependentUpon>frmnotlardetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpersoneller.resx">
+      <DependentUpon>frmpersoneller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrehber.resx">
+      <DependentUpon>frmrehber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstokdetay.resx">
+      <DependentUpon>frmstokdetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstoklar.resx">
+      <DependentUpon>frmstoklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmurunler.resx">
+      <DependentUpon>frmurunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
